@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<title>HTML, CSS and JavaScript demo</title>
+</head>
+<body>
+<!-- Start your code here -->
+
+
+<div class="container p-2">
+    <h1 class="text-center">Computer Knowledge Exam</h1>
+    <hr />
+
+    <div id="welcome">
+        <h3 class="text-center">Instructions</h3>
+        <ul>
+            <li>
+                You have 5 minutes to finish the exam
+            </li>
+            <li>
+                If you've not completed the exam after 5 mins, the exam will automatically end
+            </li>
+            <li>
+                There are 10 questions in total
+            </li>
+        </ul>
+        <button id="start-exam" class="btn btn-success">Start Exam</button>
+    </div>
+
+    <div class="hidden" id="exam">
+        <div class="exam-top">
+            <p class="float-end">Time Left: <span id="exam-timer">15</span></p>
+            <p>Question: <span id="question-num"></span></p>
+        </div>
+
+        <hr>
+
+        <div id="question"></div>
+        <div id="choices" class="choices">
+            <div>
+                A.  <span id="A" class="answer"></span>
+            </div>
+            <div>
+                B.  <span id="B" class="answer"></span>
+            </div>
+            <div>
+                C.  <span id="C" class="answer"></span>
+            </div>
+            <div>
+                D.  <span id="D" class="answer"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center hidden" id="results">
+        <h4>Results</h4>
+        <p class="right">You got <strong><span id="number-right"></span></strong> right</p>
+        <p class="wrong">You got <strong><span id="number-wrong"></span></strong> wrong</p>
+
+        <h5>Total Score: <span id="score"></span>%</h5>
+        <button class="btn btn-success" id="continue-btn">Continue</button>
+    </div>
+</div> 
+  
+
+<!-- End your code here -->
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>

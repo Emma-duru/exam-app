@@ -1,0 +1,23 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: #f5f5f5;
+}
+
+.hidden {
+  display: none;
+}
+
+.choices div {
+  margin: 10px;
+}
+
+.answer {
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.answer:hover {
+  background-color: #51f79b;
+}
